@@ -1,4 +1,4 @@
-package com.lify.demo;
+package com.lify.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

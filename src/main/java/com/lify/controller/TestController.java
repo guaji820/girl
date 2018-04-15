@@ -1,4 +1,4 @@
-package com.lify.demo;
+package com.lify.controller;
 
 import org.springframework.web.bind.annotation.*;
 

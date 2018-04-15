@@ -1,8 +1,9 @@
-package com.lify.demo;
+package com.lify.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 @Entity
 public class Girl {
@@ -13,6 +14,7 @@ public class Girl {
 
     private String cupSize;
 
+    @Min(value = 18, message = "未成年少女禁止入内")//这里对于单属性添加 过滤条件，或者验证
     private Integer age;
 
     public Integer getId() {

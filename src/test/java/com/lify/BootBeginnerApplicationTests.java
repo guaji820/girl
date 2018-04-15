@@ -1,4 +1,4 @@
-package com.lify.demo;
+package com.lify;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
