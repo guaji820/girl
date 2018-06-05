@@ -16,9 +16,9 @@ public class ExceptionHandle {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public ResponseData handle(Exception e){
-        if(e instanceof CommonException){
-            return ResponseDataUtil.fail(((CommonException)e).getCode(),((CommonException)e).getMessage());
+    public ResponseData handle(Exception e) {
+        if (e instanceof CommonException) {
+            return ResponseDataUtil.fail(((CommonException) e).getCode(), ((CommonException) e).getMessage());
         }
         logger.info("系统异常{}", e);
         return ResponseDataUtil.fail(-1, e.getMessage());

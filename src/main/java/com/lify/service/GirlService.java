@@ -33,7 +33,7 @@ public class GirlService {
 
     public void getAge(Integer id) throws Exception {
         Girl girl = girlRepository.findOne(id);
-        if(girl == null){
+        if (girl == null) {
             throw new GirlException(GirlExceptionCode.EXCEPTION_CODE1);
         }
         Integer age = girl.getAge();
@@ -44,7 +44,7 @@ public class GirlService {
         }
     }
 
-    public Girl findOne(Integer id){
+    public Girl findOne(Integer id) {
         return girlRepository.findOne(id);
     }
 }

@@ -21,6 +21,6 @@ public class GirlControllerTest {
     @Test
     public void girlList() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/girl/girls")).andExpect(MockMvcResultMatchers.status().isOk())
-        .andExpect(MockMvcResultMatchers.content().string("abc"));//这里 url要给从 contextPath /之后的开始写
+                .andExpect(MockMvcResultMatchers.content().string("abc"));//这里 url要给从 contextPath /之后的开始写
     }
 }

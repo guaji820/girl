@@ -4,7 +4,7 @@ public class CommonException extends RuntimeException {
 
     private Integer code;
 
-    public CommonException(Integer code,String message) {
+    public CommonException(Integer code, String message) {
         super(message);
         this.code = code;
     }
